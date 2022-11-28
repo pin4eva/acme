@@ -1,0 +1,158 @@
+:root{
+--dark: #35424A;
+--primary: #CF5232;
+--light: #F4F4F4;
+--gray: #E6E6E6;
+--text-light:#F1F9FC;
+--text-dark:#434343;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-color: var(--light);
+}
+
+
+.container {
+max-width: 90%;
+margin: 0 auto;
+}
+
+
+.text-primary{
+color: var(--primary);
+}
+
+.text-light {
+color: var(--text-light);
+}
+
+a{
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+/* Top Header */
+
+.header {
+  background-color: var(--dark);
+border-bottom: 4px solid var(--primary);
+padding: 1.5rem 0;
+}
+
+.header .navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header .navbar-brand {
+font-size: 2rem;
+font-weight: 600;
+/* flex: 1; */
+
+}
+
+.header .navbar-nav {
+display: flex;
+margin: 0;
+gap: 1rem;
+}
+
+.header .navbar-nav a {
+text-transform: uppercase;
+font-weight: 600;
+}
+
+/* Header bottom */
+
+input {
+padding: 0.5rem;
+}
+
+.btn {
+padding: 0.5rem 1rem;
+border-radius: 0;
+border: 0;
+background-color: transparent;
+font-weight: 600;
+}
+
+.btn-primary {
+background-color: var(--primary);
+color: var(--text-light);
+border: 2px solid var(--primary) ;
+}
+
+.header-bottom {
+background-color: var(--dark);
+color: var(--text-light);
+padding-block: 1.5rem;
+}
+
+.header-bottom-inner{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header-bottom-left p {
+margin: 0;
+
+}
+
+.header-bottom-right {
+
+width: 25%;
+}
+.header-bottom-right .form-group{
+display: flex;
+gap:0.25rem
+}
+.header-bottom-right input {
+width: 100%;
+display: block;
+}
+
+
+/* Main */
+
+.main-inner {
+margin-top: 0.5rem;
+display: flex;
+gap:1.5rem;
+}
+
+.main-inner-left{
+flex: 1;
+}
+
+.services-item{
+background-color: var(--gray);
+border: 1px solid darkgray;
+padding: 1rem;
+color: var(--text-dark);
+margin-bottom: 0.25rem;
+}
+
+
+.main-inner-right{
+width: 25%;
+}
+
+.right-inner {
+  background-color: var(--dark);
+  color: var(--text-light);
+padding: 1rem;
+}
+
+.left-form .form-group {
+display: flex;
+flex-direction: column;
+margin-bottom: 0.5rem;
+}
